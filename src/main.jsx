@@ -1,6 +1,8 @@
 import React, {} from 'react'
-import App from './App.jsx'
+import Home from './Home.jsx'
 import {Login} from './Login.jsx'
+import {Header} from './Header.jsx'
+
 import './index.css'
 
 import ReactDOM from "react-dom/client";
@@ -9,8 +11,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 export default function Main() {
     return (
         <BrowserRouter>
+            <Header></Header>
             <Routes>
-                <Route path="/" element={<App/>}></Route>
+                <Route path="/" element={<Home/>}></Route>
                 <Route path="/Login" element={<Login />}></Route>
             </Routes>
         </BrowserRouter>
