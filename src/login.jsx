@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '/src/App.css';
 import '/src/colors.scss';
 import 'bootstrap/dist/js/bootstrap.js'
+import App from "./App.jsx";
 
 function login() {
     return (
@@ -86,5 +87,7 @@ function login() {
         </section>
     );
 }
+
+
 
 
