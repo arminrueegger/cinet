@@ -10,6 +10,7 @@ export default function Main() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App />}></Route>
+
             </Routes>
         </BrowserRouter>
     );
