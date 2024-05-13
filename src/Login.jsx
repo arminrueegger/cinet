@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '/src/App.css';
 import 'bootstrap/dist/js/bootstrap.js'
 
-function login() {
+export function Login() {
     return (
 
         <section className="">
