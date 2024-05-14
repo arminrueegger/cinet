@@ -1,13 +1,13 @@
-import './App.css'
+import './Header.css'
 import {Link} from "react-router-dom";
 
 export function Header() {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary"  >
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">Navbar</a>
+                    <a className="navbar-brand" href="#">Cinet</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@ export function Header() {
                             <li className="nav-item">
                                 <Link className={"nav-link"} to={"/"}>Home</Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item" >
                                 <Link className={"nav-link"} to={"/Login"}>Login</Link>
                             </li>
                         </ul>
