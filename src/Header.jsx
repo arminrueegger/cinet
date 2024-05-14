@@ -4,7 +4,7 @@ export function Header() {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg " style={{ backgroundColor: '#157cc7' }}>
+            <nav className="navbar navbar-expand-lg " style={{ backgroundColor: '#2e9378' }}>
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">Cinet</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -17,7 +17,7 @@ export function Header() {
                             <li className="nav-item">
                                 <Link className={"nav-link"} to={"/"}>Home</Link>
                             </li>
-                            <li className="nav-item"  style={{ backgroundColor: '#38932e' }}>
+                            <li className="nav-item"  style={{ backgroundColor: '#1fa298' }}>
                                 <Link className={"nav-link"} to={"/Login"}>Login</Link>
                             </li>
                         </ul>
