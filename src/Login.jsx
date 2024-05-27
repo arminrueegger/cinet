@@ -33,10 +33,7 @@ export function Login({name, setName, email, setEmail, phone, setPhone}) {
 
 
                 {/*Modal*/}
-                <div
-                    className="modal fade"
-                    id="enroll"
-                >
+                <div className="modal fade" id="enroll">
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -71,6 +68,19 @@ export function Login({name, setName, email, setEmail, phone, setPhone}) {
 
                                     </div>
                                 </form>
+                                <div className="modal-footer">
+                                    <button
+                                        type="button"
+                                        className="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                    <button type="submit" className="btn btn-primary" data-bs-dismiss="modal"
+                                            onClick={handleAvatarChange}>
+                                        Submit
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
