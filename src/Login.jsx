@@ -65,7 +65,10 @@ export function Login({name, setName, email, setEmail, phone, setPhone}) {
                                     </div>
                                     <div className="mb-3">
                                         <label htmlFor="phone" className="col-form-label">Phone:</label>
-                                        <input type="tel" className="form-control" id="phone"/>
+                                        <input type="tel" className="form-control" id="phone"
+                                               onChange={handlePhoneChange}
+                                        />
+
                                     </div>
                                 </form>
                             </div>

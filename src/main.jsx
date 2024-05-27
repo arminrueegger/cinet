@@ -6,6 +6,7 @@ import {Header} from './Header.jsx'
 import ReactDOM from "react-dom/client";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {Games} from "./Games.jsx";
+import {PointShop} from "./PointShop.jsx";
 
 export default function Main() {
     const [name, setName] = useState('')
@@ -23,6 +24,8 @@ export default function Main() {
                        element={<Login name={name} setName={setName} email={email} setEmail={setEmail} phone={phone}
                                        setPhone={setPhone}/>}></Route>
                 <Route path="/Games" element={<Games points={points} setPoints={setPoints}/>}></Route>
+                <Route path="/PointShop" element={<PointShop points={points} setPoints={setPoints}/>}></Route>
+
             </Routes>
         </BrowserRouter>
     );
