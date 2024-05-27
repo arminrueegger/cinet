@@ -11,13 +11,17 @@ export default function Main() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [points, setPoints] = useState(0)
+    const [phone, setPhone] = useState('')
+
 
     return (
         <BrowserRouter>
             <Header></Header>
             <Routes>
                 <Route path="/" element={<Home/>}></Route>
-                <Route path="/Login" element={<Login name={name} setName={setName} email={email} setEmail={setEmail}/>}></Route>
+                <Route path="/Login"
+                       element={<Login name={name} setName={setName} email={email} setEmail={setEmail} phone={phone}
+                                       setPhone={setPhone}/>}></Route>
                 <Route path="/Games" element={<Games points={points} setPoints={setPoints}/>}></Route>
             </Routes>
         </BrowserRouter>

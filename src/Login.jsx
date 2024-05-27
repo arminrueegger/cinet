@@ -2,12 +2,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js'
 import {useState} from "react";
 
-export function Login({name, setName, email, setEmail}) {
+export function Login({name, setName, email, setEmail, phone, setPhone}) {
     const handleNameChange = (event) => {
         setName(event.target.value)
     }
     const handleEmailChange = (event) => {
-        setName(event.target.value)
+        setEmail(event.target.value)
+    }
+    const handlePhoneChange = (event) => {
+        setPhone(event.target.value)
     }
 
     return (
@@ -49,7 +52,7 @@ export function Login({name, setName, email, setEmail}) {
                                 <p className="lead">Fill out this form and we will get back to you</p>
                                 <form>
                                     <div className="mb-3">
-                                        <label htmlFor="last-name" className="col-form-label">Last Name:</label>
+                                        <label htmlFor="last-name" className="col-form-label">Full Name:</label>
                                         <input type="text" className="form-control" id="last-name"
                                                onChange={handleNameChange}
                                         />
@@ -57,7 +60,7 @@ export function Login({name, setName, email, setEmail}) {
                                     <div className="mb-3">
                                         <label htmlFor="email" className="col-form-label">Email:</label>
                                         <input type="email" className="form-control" id="email"
-                                        onChange={handleEmailChange}
+                                               onChange={handleEmailChange}
                                         />
                                     </div>
                                     <div className="mb-3">
