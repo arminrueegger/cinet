@@ -1,8 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '/src/App.css';
 import 'bootstrap/dist/js/bootstrap.js'
+import {useState} from "react";
 
-export function Login() {
+export function Login({name, setName, email, setEmail}) {
+    const handleNameChange = (event) => {
+        setName(event.target.value)
+    }
+    const handleEmailChange = (event) => {
+        setName(event.target.value)
+    }
+
     return (
 
         <section className="">
@@ -49,11 +56,15 @@ export function Login() {
                                     </div>
                                     <div className="mb-3">
                                         <label htmlFor="last-name" className="col-form-label">Last Name:</label>
-                                        <input type="text" className="form-control" id="last-name"/>
+                                        <input type="text" className="form-control" id="last-name"
+                                               onChange={handleNameChange}
+                                        />
                                     </div>
                                     <div className="mb-3">
                                         <label htmlFor="email" className="col-form-label">Email:</label>
-                                        <input type="email" className="form-control" id="email"/>
+                                        <input type="email" className="form-control" id="email"
+                                        onChange={handleEmailChange}
+                                        />
                                     </div>
                                     <div className="mb-3">
                                         <label htmlFor="phone" className="col-form-label">Phone:</label>
@@ -61,25 +72,8 @@ export function Login() {
                                     </div>
                                 </form>
                             </div>
-                            <div className="modal-footer">
-                                <button
-                                    type="button"
-                                    className="btn btn-secondary"
-                                    data-bs-dismiss="modal"
-                                >
-                                    Close
-                                </button>
-                                <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Submit
-                                </button>
-                            </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div className="text-center p-3 background-color-grey-dark">
-                    © 2024 Copyright:
-                    <a className="text-black" href="/"> CINET.com</a>
                 </div>
             </footer>
         </section>
