@@ -17,8 +17,11 @@ export function Header() {
                             <li className="nav-item">
                                 <Link className={"nav-link"} to={"/"}>Home</Link>
                             </li>
-                            <li className="nav-item"  style={{ backgroundColor: '#1fa298' }}>
+                            <li className="nav-item" style={{backgroundColor: '#1fa298'}}>
                                 <Link className={"nav-link"} to={"/Login"}>Login</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className={"nav-link"} to={"/Games"}>Games</Link>
                             </li>
                         </ul>
                     </div>

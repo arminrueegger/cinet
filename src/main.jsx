@@ -5,6 +5,7 @@ import {Header} from './Header.jsx'
 
 import ReactDOM from "react-dom/client";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {Games} from "./Games.jsx";
 
 export default function Main() {
     const [name, setName] = useState('')
@@ -16,6 +17,7 @@ export default function Main() {
             <Routes>
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/Login" element={<Login name={name} setName={setName} email={email} setEmail={setEmail}/>}></Route>
+                <Route path="/Games" element={<Games/>}></Route>
             </Routes>
         </BrowserRouter>
     );
