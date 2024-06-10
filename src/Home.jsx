@@ -133,9 +133,14 @@ function Home() {
                         Get Points now:
                     </div>
                     <div className="col">
+
                         <Link className={"nav-link"} to={"/Games"}>
                             <button>Games</button>
                         </Link>
+
+                        <Link className={"nav-link"} to={"/Games"}>Home</Link>
+
+
                     </div>
                 </div>
             </div>
