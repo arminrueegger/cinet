@@ -10,10 +10,8 @@ font-weight: bold;
 }
 
 .smallTitle{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
     font-family: "Archivo Black", sans-serif;
     font-weight: bold;
 }

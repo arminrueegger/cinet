@@ -4,8 +4,14 @@ import "./shopRow.css" ;
 import React from "react";
 
 export function PointShop({points, setPoints}) {
-    const handlePointChange = (event) => {
+    const handlePointChangeTicket = (event) => {
         setPoints(points - 200)
+    }
+    const handlePointChangeVIP = (event) => {
+        setPoints(points - 1000)
+    }
+    const handlePointChangeGetreanke = (event) => {
+        setPoints(points - 100)
     }
 
     return (
@@ -17,23 +23,23 @@ export function PointShop({points, setPoints}) {
                 <div className="flex-container">
                     <div className="flex-item">
                         <img
-                            src="https://thelogicalindian.com/h-upload/2021/03/17/192284-thelogicalindianfb1000x600-1.jpg"
-                            alt="Pacman"/>
-                        <div className="game-title">Pacman</div>
-                        <a className="play-button" onClick={handlePointChange}>Kaufen</a>
+                            src="src/assets/kinoTicket.png"
+                            alt="kino Tickets"/>
+                        <div className="game-title">Gratis Ticket</div>
+                        <a className="play-button" onClick={handlePointChangeTicket}>200 Points</a>
                     </div>
                     <div className="flex-item">
-                        <img src="https://img.gamepix.com/games/snow-rider-3d/cover/snow-rider-3d.png?w=400"
-                             alt="Snow Rider"/>
-                        <div className="game-title">Snow Rider</div>
-                        <a className="play-button" onClick={handlePointChange}>Kaufen</a>
+                        <img src="src/assets/Getreanke.jpeg"
+                             alt="Getreanke"/>
+                        <div className="game-title">Gratis Getreanke</div>
+                        <a className="play-button" onClick={handlePointChangeGetreanke}>100 Points</a>
                     </div>
                     <div className="flex-item">
                         <img
-                            src="https://images.squarespace-cdn.com/content/v1/5cedd5e7c6e7df0001bbb67c/1564551973622-EE9YJORD9OFXPKW9NYKW/Banner_Video_Cover.jpg?format=2500w"
-                            alt="Crossy Road"/>
-                        <div className="game-title">Crossy Road</div>
-                        <a className="play-button" onClick={handlePointChange}>Kaufen</a>
+                            src="src/assets/VIPTicket.jpeg"
+                            alt="VIP Ticket"/>
+                        <div className="game-title">VIP Ticket</div>
+                        <a className="play-button" onClick={handlePointChangeVIP}>1000 Points</a>
                     </div>
                 </div>
             </div>

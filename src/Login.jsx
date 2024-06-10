@@ -19,7 +19,7 @@ export function Login({name, setName, email, setEmail, phone, setPhone}) {
                 <div className="container p-4 pb-0">
                     <section className="">
                         <p className="d-flex justify-content-center align-items-center">
-                            <span className="me-3">Register for free</span>
+                            <span className="me-3"></span>
                             <button data-mdb-ripple-init type="button"
                                     className="border-black btn btn-outline-light btn-rounded text-black"
                                     data-bs-toggle="modal"
