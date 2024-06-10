@@ -42,11 +42,10 @@ function Home() {
         <>
             <style>
                 {`
-                @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Young+Serif&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
                 .slideshow-container {
                     position: relative;
                     width: 100%;
-                    height: 100vh;
                     overflow: hidden;
                 }
                 .slideshow-image {
@@ -58,7 +57,7 @@ function Home() {
                 .prev, .next {
                     cursor: pointer;
                     position: absolute;
-                    top: 32%;
+                    top: 48%;
                     width: auto;
                     padding: 16px;
                     margin-top: -22px;
@@ -116,6 +115,20 @@ function Home() {
                     font-size: 300%;
                     margin-top: -12%;
                 }
+                .col-sm{
+                    margin-top: 4%;
+                }
+                .text-font{
+                    font-family: "Archivo Black";
+                }
+                .button-games{
+                    font-family: "Archivo Black";
+                    font-size: 1.5em;
+                    width: 25%;
+                    height: 70px;
+                    border-radius: 10px;
+                    border: none;
+                }
                 
                 
                 `}
@@ -129,11 +142,13 @@ function Home() {
 
             <div className="container text-center">
                 <div className="row">
-                    <div className="col">
-                        Get Points now:
+                    <div className="col-sm">
+                        <h2 className="text-font">Get Points now:</h2>
                     </div>
-                    <div className="col">
-                            <Link className={"nav-link"} to={"/Games"}>Games</Link>
+                    <div className="col-sm">
+                        <Link className={"nav-link"} to={"/Games"}>
+                            <button class="button-games">Games</button>
+                        </Link>
                     </div>
                 </div>
             </div>
