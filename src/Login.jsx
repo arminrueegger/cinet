@@ -79,14 +79,19 @@ export function Login({name, setName, email, setEmail, phone, setPhone,isLoggedI
                                 >
                                     Close
                                 </button>
-                                <button type="button" className="btn btn-primary" data-bs-dismiss="modal" onClick={handleLoggedIn}>Submit
+                                <button type="button" className="btn btn-primary" data-bs-dismiss="modal"
+                                        onClick={handleLoggedIn}>Submit
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </footer>
+            <div>
+
+            </div>
         </section>
+
     );
 }
 

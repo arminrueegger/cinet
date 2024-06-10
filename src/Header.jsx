@@ -27,6 +27,9 @@ export function Header() {
                             <li className="nav-item">
                                 <Link className={"nav-link"} to={"/Login"}>Login</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className={"nav-link"} to={"/Profil"}>Profil</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
