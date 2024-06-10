@@ -7,12 +7,14 @@ import ReactDOM from "react-dom/client";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {Games} from "./Games.jsx";
 import {PointShop} from "./PointShop.jsx";
+import {Profile} from "./Profile.jsx";
 
 export default function Main() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [points, setPoints] = useState(0)
     const [phone, setPhone] = useState('')
+    const [isLoggedIn, setIsLoggedIn] = useState(false)
 
 
     return (
@@ -22,7 +24,10 @@ export default function Main() {
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/Login"
                        element={<Login name={name} setName={setName} email={email} setEmail={setEmail} phone={phone}
-                                       setPhone={setPhone}/>}></Route>
+                                       setPhone={setPhone} isLoggedIn={isLoggedIn} setLoggedIn={setIsLoggedIn} />}></Route>
+                <Route path="/Profile"
+                       element={<Profile name={name} setName={setName} email={email} setEmail={setEmail} phone={phone}
+                                         setPhone={setPhone}/>} ></Route>
                 <Route path="/Games" element={<Games points={points} setPoints={setPoints}/>}></Route>
                 <Route path="/PointShop" element={<PointShop points={points} setPoints={setPoints}/>}></Route>
 

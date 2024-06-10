@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js'
 
-export function Login({name, setName, email, setEmail, phone, setPhone}) {
+export function Login({name, setName, email, setEmail, phone, setPhone,isLoggedIn, setLoggedIn}) {
     const handleNameChange = (event) => {
         setName(event.target.value)
     }
@@ -10,6 +10,9 @@ export function Login({name, setName, email, setEmail, phone, setPhone}) {
     }
     const handlePhoneChange = (event) => {
         setPhone(event.target.value)
+    }
+    const handleLoggedIn = (event) => {
+        setLoggedIn(true)
     }
 
     return (
@@ -76,7 +79,7 @@ export function Login({name, setName, email, setEmail, phone, setPhone}) {
                                 >
                                     Close
                                 </button>
-                                <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Submit
+                                <button type="button" className="btn btn-primary" data-bs-dismiss="modal" onClick={handleLoggedIn}>Submit
                                 </button>
                             </div>
                         </div>
