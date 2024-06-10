@@ -5,13 +5,19 @@ import React from "react";
 
 export function PointShop({points, setPoints}) {
     const handlePointChangeTicket = (event) => {
-        setPoints(points - 200)
+        if (points >= 200) {
+            setPoints(points - 200)
+        }
     }
     const handlePointChangeVIP = (event) => {
-        setPoints(points - 1000)
+        if (points >= 1000) {
+            setPoints(points - 1000)
+        }
     }
     const handlePointChangeGetreanke = (event) => {
-        setPoints(points - 100)
+        if (points >= 100) {
+            setPoints(points - 100)
+        }
     }
 
     return (
