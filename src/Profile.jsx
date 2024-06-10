@@ -7,7 +7,7 @@ export function Profile({name, setName, email, setEmail, phone, setPhone}) {
         <>
             <div className="profile">
 
-                <img className="img-Armin" src="src/assets/RüeggerArmin.jpg" alt={"Profile Picture"}/>
+                <img className="img-Armin" src="src/assets/andri.png" alt={"Profile Picture"}/>
 
                 <h1 className="profil-details">{name}</h1>
                 <h1 className="profil-details">{email}</h1>
