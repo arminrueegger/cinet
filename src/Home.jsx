@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {Link} from "react-router-dom";
 
 function Home() {
     const images = [
@@ -112,19 +113,38 @@ function Home() {
                     font-size: 1em;
                     color: #555;
                 }
+                .col{
+                    font-size: 300%;
+                    margin-top: -12%;
+                }
+                
+                
                 `}
             </style>
 
             <div className="slideshow-container">
-                <img src={images[currentIndex]} alt="Slideshow" className="slideshow-image" />
+                <img src={images[currentIndex]} alt="Slideshow" className="slideshow-image"/>
                 <span className="prev" onClick={handlePrev}>&#10094;</span>
                 <span className="next" onClick={handleNext}>&#10095;</span>
+            </div>
+
+            <div className="container text-center">
+                <div className="row">
+                    <div className="col">
+                        Get Points now:
+                    </div>
+                    <div className="col">
+                        <Link className={"nav-link"} to={"/Games"}>
+                            <button>Games</button>
+                        </Link>
+                    </div>
+                </div>
             </div>
 
             <div className="movies-container">
                 {movies.map((movie, index) => (
                     <div key={index} className="movie">
-                        <img src={movie.poster} alt={movie.title} />
+                        <img src={movie.poster} alt={movie.title}/>
                         <div className="movie-details">
                             <div className="movie-title">{movie.title}</div>
                             <div className="movie-description">{movie.description}</div>
