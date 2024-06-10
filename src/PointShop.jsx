@@ -1,30 +1,39 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js'
+import "./shopRow.css" ;
+import React from "react";
 
 export function PointShop({points, setPoints}) {
-    const handlePointsChange = (event) => {
-        setPoints(event.target.value)
+    const handlePointChange = (event) => {
+        setPoints(points - 200)
     }
 
     return (
         <>
-            <div className="row ps-3 pt-3">
-                <div className="col">
-                    <img src="src/assets/popcorn.jpg"/>
-                    <div>
-                        1x Gratis Popcorn
+            <h1 className="title">Pointshop</h1>
+            <h3 className="smallTitle"> Points: {points}</h3>
+
+            <div className="container">
+                <div className="flex-container">
+                    <div className="flex-item">
+                        <img
+                            src="https://thelogicalindian.com/h-upload/2021/03/17/192284-thelogicalindianfb1000x600-1.jpg"
+                            alt="Pacman"/>
+                        <div className="game-title">Pacman</div>
+                        <a className="play-button" onClick={handlePointChange}>Kaufen</a>
                     </div>
-                </div>
-                <div className="col ps-3" >
-                    <img src="src/assets/drink.jpg"/>
-                    <div>
-                        1x Gratis Getränk
+                    <div className="flex-item">
+                        <img src="https://img.gamepix.com/games/snow-rider-3d/cover/snow-rider-3d.png?w=400"
+                             alt="Snow Rider"/>
+                        <div className="game-title">Snow Rider</div>
+                        <a className="play-button" onClick={handlePointChange}>Kaufen</a>
                     </div>
-                </div>
-                <div className="col ps-3">
-                    <img src="src/assets/ticket.jpg"/>
-                    <div>
-                        1x Gratis Ticket
+                    <div className="flex-item">
+                        <img
+                            src="https://images.squarespace-cdn.com/content/v1/5cedd5e7c6e7df0001bbb67c/1564551973622-EE9YJORD9OFXPKW9NYKW/Banner_Video_Cover.jpg?format=2500w"
+                            alt="Crossy Road"/>
+                        <div className="game-title">Crossy Road</div>
+                        <a className="play-button" onClick={handlePointChange}>Kaufen</a>
                     </div>
                 </div>
             </div>

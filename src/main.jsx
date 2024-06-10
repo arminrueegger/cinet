@@ -19,7 +19,7 @@ export default function Main() {
         <BrowserRouter>
             <Header></Header>
             <Routes>
-                <Route path="/" element={<Home/>}></Route>
+                <Route path="/Home" element={<Home/>}></Route>
                 <Route path="/Login"
                        element={<Login name={name} setName={setName} email={email} setEmail={setEmail} phone={phone}
                                        setPhone={setPhone}/>}></Route>
